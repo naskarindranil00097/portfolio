@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 0.4em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #661400;
+  /*outline: 1px solid #0099e6;  */
+}
+
+
+.modal::-webkit-scrollbar {
+    width: 0.4em;
+}
+ 
+.modal::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.modal::-webkit-scrollbar-thumb {
+  background-color: #661400;
+  /*outline: 1px solid #0099e6;  */
+}
+
+body{
+	background-color: #ffffff;
+	overflow-x: hidden;
+}
+
+.main{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../img/main_img.AVIF');
+	height: 76vh;
+	width: 100%;
+	border-radius: 0% 0% 10% 10%;
+}
+
+.header{
+	width: 100%;
+	background-color: transparent;
+}
+
+.header .navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 10px;
+}
+
+.header .navbar .logo a{
+	font-size: 25px;
+	font-weight: bold;
+	color: #ff3300;
+	font-family: 'Tektur', cursive;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.header .navbar .logo a:hover{
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	font-family: 'Tektur', cursive;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.header .navbar #nav-item a{
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: normal;
+	color: white;
+	padding: 10px;
+	font-family: 'Tektur', cursive;
+	letter-spacing: 2px;
+}
+
+.header .navbar #nav-item a:hover{
+	font-weight: normal;
+	font-size: 15px;
+	color: #ff3300;
+	transition: all 0.5s ease;
+}
+
+.name_plate h3{
+	font-family: 'Tektur', cursive;
+	color: white;
+	font-size: 120%;
+	padding-top: 10%;
+	padding-left: 8%;
+	letter-spacing: 1px;
+}
+
+.name_plate h3 span{
+	color: #ff3300;
+}
+
+.name_plate h4{
+	font-family: 'Tektur', cursive;
+	color: white;
+	font-size: 250%;
+	padding-left: 8%;
+	letter-spacing: 2px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.name_plate h5{
+	font-family: 'Tektur', cursive;
+	color: white;
+	font-size: 120%;
+	padding-left: 8%;
+	letter-spacing: 1px;
+}
+
+.name_plate h5 span{
+	color: #ff3300;
+}
+
+.name_plate .main_cv{
+	padding-left: 8%;
+	letter-spacing: 1px;
+}
+
+.name_plate a .cv{
+	letter-spacing: 1px;
+	padding: 5px 5px;
+	border-radius: 3px 13px 3px 13px;
+	font-size: 13px;
+	background-color: #ff3300;
+	color: white;
+	border: 1px solid #fff;
+	font-family: 'Tektur', cursive;
+}
+
+.name_plate a .cv:hover{
+	letter-spacing: 1px;
+	color: white;
+	background-color: #991f00;
+	border: 1px solid #fff;
+	font-family: 'Tektur', cursive;
+}
+
+.skill_card{
+	border-radius: 5px 22px 5px 22px;
+}
+
+.skill_card:hover{
+	border-radius: 5px 22px 5px 22px;
+	border: 1px solid #ff3300;
+	transition: all 0.5s ease;
+}
+
+.skill_card .sub_skill_card p{
+	font-size: 17px;
+	font-family: 'Tektur', cursive;
+	letter-spacing: 1px;
+	color: #ff3300;
+}
+
+.about_container{
+	background-color: #ffebe6;
+	border-radius: 5px;
+}
+
+.about_container .h10{
+	color: #ff3300;
+	font-weight: bold;
+	font-family: 'Tektur', cursive;
+	letter-spacing: 1px;
+	font-size: 190%;
+}
+
+.about_container p{
+	color: #330a00;
+	font-family: 'Tektur', cursive;
+	letter-spacing: 1px;
+	font-size: 13px;
+	text-align: justify;
+	line-height: 1.4rem;
+}
+
+.footer{
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	text-align: center;
+  	border-radius: 50% 50% 0% 0%;
+}
+
+.footer p{
+  	color: white;
+  	text-align: center;
+  	font-family: 'Tektur', cursive;
+  	font-size: 13px;
+}
+
+.nav-toggle{
+	float: right;
+	color: white;
+	padding: 1px 2px;
+	font-size: 20px;
+	background-color: black;
+	border: 2px solid white;
+	border-radius: 20px;
+}
+
+
+@media screen and (max-width : 576px){
+	#nav-item{
+		display: none;
+		background-color: ;	
+	}
+
+	.nav-toggle{
+		display: block;
+	}
+}
+
+@media screen and (min-width : 1200px){
+	.nav-toggle{
+		display: none;
+	}
+}
+
+@media screen and (min-width : 900px){
+	.nav-toggle{
+		display: none;
+	}
+}
